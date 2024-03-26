@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>site5</title>
     <link rel="stylesheet" href="/css/prestige.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
         <nav>
@@ -18,12 +22,6 @@
                 </li>
                 <li>
                     <a href="#">About Us</a>
-                </li>
-                <li>
-                    <a href="#">Careers</a>
-                </li>
-                <li>
-                    <a href="#">Community</a>
                 </li>
             </ul>
             <button>Get Started</button>
@@ -42,8 +40,8 @@
             <img src="/Image2/illustration-intro.svg">
         </main>
 
-        <section>
-            <div>
+        <section id="about">
+            <div class="about-header">
                 <h1>
                     What’s different about Manage?
                 </h1>
@@ -51,47 +49,48 @@
                     Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.
                 </p>
             </div>
-            <div>
+            <div class="about-contents">
                 <div>
-                    <div>
-                        <p>01</p>
+                    <div class="content-head">
+                       <p >01</p> 
                         <h2>
-                            Track company-wide progress
+                           Track company-wide progress
                         </h2>
                     </div>
-                    <p>
+                      <p class="vision">
                         See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
                     </p>
                 </div>
-                <div>
-                    <div>
+            <div>
+                    <div class="content-head">
                         <p>02</p>
                         <h2>
                             Advanced built-in reports
                         </h2>
                     </div>
-                    <p>
+                    <p class="vision" >
                         Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.
                     </p>
-                </div>
-                <div>
-                    <p>03</p>
+            </div>
+                <div class="content-head">
+                    <p >03</p>
                     <h2>
                         Everything you need in one place
                     </h2>
-                    <p>
+                </div>
+                    <p class="vision">
                         Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h1>
+        <section id="image-holder">
+            <h1 class="WHAT">
                 What they've said
             </h1>
-            <div>
-                <div>
+            <div class="functions">
+                <div class=" my-functions">
                     <img src="/Image2/avatar-anisha.png">
                     <h2>
                         Anisha Li
@@ -120,21 +119,21 @@
                 </div>
                 <div>
                         <img src="/Image2/avatar-shanai.png">
-                        <h1>
+                        <h2>
                             Shanai Gough
-                        </h1>
+                        </h2>
                         <p>
                             Their software allows us to track, manage and collaborate on our project from everywhere. It keeps the whole team in-sync without being intrusive.
                         </p>
                 </div>
         
             </div>
-            <button>
+            <button class="main-button">
                 Get Started
             </button>
         </section>
 
-        <section>
+        <section class="simple">
             <h1>
                 Simplify how your team works today.
             </h1>                              
@@ -142,9 +141,30 @@
         </section>
 
         <footer>
-           <img src="/Image2/logo (1).svg">
-          <div>
+            <div class="pdd">
+                <a href="#">
+                    <img src="/Image2/logo (1).svg">
+                </a>
             <ul>
+                <li>
+                    <a href="https://web.facebook.com/chinaza.nwebo" target="_blank"><i class="ri-facebook-circle-line"></i></a>
+                </li>
+                <li>
+                    <a href="https://wa.me/+2348167708590" target="_blank"><i class="ri-whatsapp-line"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="ri-twitter-line"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="ri-youtube-line"></i></a>
+                </li>
+            </ul>
+        </div>
+          <div class="items">
+            <ul class="victor">
                     <li>
                         <a href="#">Home</a>
                     </li>
@@ -159,7 +179,7 @@
                     </li>     
                 </a>
             </ul>
-             <ul>
+             <ul class="vic">
                         <li>
                             <a href="#">Careers</a>
                         </li>
@@ -174,7 +194,7 @@
          </div>
 
          <div>
-            <div>
+            <div class="input">
                 <input placeholder="Updates in your inbox..." />
                 <button>Go</button>
             </div>

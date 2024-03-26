@@ -21,7 +21,10 @@ nav{
     justify-content: space-between;
     background-color:floralwhite;
     padding: 16px 70px; 
-    
+}
+
+nav a{
+    color: #242D52;
 }
 
 nav ul{
@@ -39,6 +42,8 @@ button{
     cursor: pointer;
 }
 
+
+
 main{
     display: flex;
     align-items: center;
@@ -47,20 +52,25 @@ main{
 }
 
 main img{
-    width: 50%;
+    width: 45%;
+}
+
+main div{
+    width: 45%;
 }
 
 main div h1{
-font-size: 50px;
-font-weight: 400;
-color: rgba(11, 5, 0, 0.961);
-padding: 20px 20px;
+    font-size: 40px;
+    font-weight: 400;
+    color: rgba(11, 5, 0, 0.961);
+    padding: 20px 0;
 }
 
 main div p{
     font-size:20px ;
-    padding: 20px 20px;
+    padding: 20px 0;
 }
+
 button{
     all: unset;
     background-color: rgb(217, 100, 41);
@@ -68,4 +78,180 @@ button{
     padding: 10px 30px;
     border-radius: 50px;
     cursor: pointer;
+}
+
+
+
+#about{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 16px 70px;
+}
+
+#about h1{
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgb(4, 4, 68);
+    font-size: 30px;
+    
+}
+
+.about-header{
+    width: 40%;
+}
+
+#about .about-header h1{
+    font-size: 40px;
+}
+.about-header p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+#about .about-contents{
+    margin-left: 60px;
+    width: 50%;
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+.content-head h2{
+    margin-left: 20px;
+}
+
+.content-head{
+    display: flex;
+    margin-bottom: 3px;
+}
+
+.content-head p{
+    background-color: #F25F3A;
+    border-radius: 20px;
+    padding: 7px 20px;
+    color: white;
+}
+
+.about-contents .vision{
+ margin-left: 80px;
+ margin-bottom: 50px;
+}
+
+#image-holder .WHAT{
+width: 100%;
+font-size: 45px ;
+padding-left: 450px;
+margin-top: 80px;
+   }
+
+.functions {
+    display: flex;
+    gap: 40px;
+    padding: 16px 70px; 
+    margin-top: 60px;
+}
+
+.functions img{
+    width: 25%;
+}
+ .functions h2{
+    font-size: 20px;
+ }
+
+ .functions div{
+    text-align: center;
+ }
+
+
+ .main-button{
+    width: auto;
+    margin: 5% auto 0;
+    display: block;
+}
+ 
+
+.simple{
+    margin-top: 7%;
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-between;
+    background: #F25F3A;
+    color: white;
+    
+}
+
+.simple h1{
+    font-size: 40px;
+    width: 35%;
+    line-height: 3.0rem;
+
+}
+.simple button{
+margin-right: 8%;
+background: white;
+color: #F25F3A;
+}
+
+.simple h1{
+margin: 7%;
+}
+
+
+footer{
+    background-color: #1D1E25;
+    padding:80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #ffff;
+}
+
+footer .pdd ul{
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 20px;
+    font-size: 24px;
+}
+
+
+footer .items{
+    display: flex;
+    gap: 100px;
+    color: white;
+}
+
+footer a{
+    color: #ffff;
+}
+
+footer ul{
+    list-style: none;
+}
+
+.victor{
+    display: block;
+    align-items: center;
+}
+
+.victor li{
+    margin-bottom: 20px;
+}
+
+.vic li{
+    margin-bottom: 20px
+}
+
+footer div p{
+    margin-top: 60px;
+}
+
+.items a{
+    color: white;
+}
+
+footer img{
+    /* padding: 80px 0px; */
+    
 }
