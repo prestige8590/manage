@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
 /* This removes all the decoration(underline) from all anchor tags */
@@ -61,8 +62,7 @@ main div{
 
 main div h1{
     font-size: 40px;
-    font-weight: 400;
-    color: rgba(11, 5, 0, 0.961);
+    color: #040404;
     padding: 20px 0;
 }
 
@@ -81,12 +81,11 @@ button{
 }
 
 
-
 #about{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 16px 70px;
+    padding: 50px 30px;
 }
 
 #about h1{
@@ -124,6 +123,7 @@ button{
 .content-head{
     display: flex;
     margin-bottom: 3px;
+    align-items: flex-start;
 }
 
 .content-head p{
@@ -141,14 +141,14 @@ button{
 #image-holder .WHAT{
 width: 100%;
 font-size: 45px ;
-padding-left: 450px;
+text-align: center;
 margin-top: 80px;
    }
 
 .functions {
     display: flex;
     gap: 40px;
-    padding: 16px 70px; 
+    padding: 50px 30px; 
     margin-top: 60px;
 }
 
@@ -255,3 +255,121 @@ footer img{
     /* padding: 80px 0px; */
     
 }
+
+.input{
+    border-radius: 50px;
+    padding: 9px 9px;
+}
+
+@media screen and (max-width:992px){
+    main div h1 {
+        font-size: 35px;
+    }
+    
+
+    
+    main img{
+        margin-bottom: 80px;
+    }
+    #about .about-header h1{
+        font-size: 29px;
+        font-weight: 700;
+    }
+
+    .about-contents .vision {
+        margin-bottom: 40px;
+    }
+
+    #image-holder .WHAT {
+        font-size: 25px;
+    }
+
+    .content-head h2 {
+      font-size: 20px;
+    }
+
+    .simple h1{
+        font-size: 24px;
+    }
+
+    footer{
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        padding: 50px 30px;
+        align-items: flex-start;
+    }
+
+    nav{
+        padding: 50px 30px;
+    }
+    nav button{
+  display: none;
+    }
+    
+    main div h1{
+        font-size: 25px;
+    }
+
+    main div p {
+        font-size: 18px;
+    }
+
+main img{
+    width: 50%;
+}
+    .functions{
+        font-size: 16px;
+    }
+
+    .input{
+        padding: 6px 6px;
+    }
+
+    footer .items{
+        gap: 20px;
+    }
+
+    footer {
+        padding: 40px;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+main{
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+main img{
+    width: 95%;
+}
+
+main div{
+    width: 95%;
+    text-align: center;
+}
+
+main div h1{
+    font-size: 29px;
+}
+
+main div p{
+    font-size: 18px;
+}
+
+#about{
+    flex-direction: column;
+    
+}
+
+.about-header{
+    width: 90%;
+    text-align: center;
+}
+}
+    
