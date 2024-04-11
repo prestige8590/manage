@@ -11,6 +11,10 @@
     font-family: 'Poppins';
 }
 
+html, body{
+    scroll-behavior: smooth;
+}
+
 /* This removes all the decoration(underline) from all anchor tags */
 a{
     text-decoration: none;
@@ -257,8 +261,56 @@ footer img{
 }
 
 .input{
+    all: unset;
     border-radius: 50px;
+    border: 1px solid gray;
+    color: #000;
+    background-color: #FFEFEB;
     padding: 9px 9px;
+}
+
+.togglers{
+     display: none; 
+}
+
+.owl-carousel .owl-item img{
+    width: 40%;
+    margin: 10px auto;
+}
+
+.owl-nav{
+    display: none;
+}
+
+.owl-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.owl-dot{
+    background-color: #F25F3A;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+    /* display: ; */
+}
+
+.owl-dot.active{
+    background-color: gray;
+}
+
+.ri-arrow-up-s-line{
+    position: fixed;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 1;
+    padding: 5px;
+    right: 20px;
+    bottom: 20px;
+    background-color: #F25F3A;
+    color: #ffff;
 }
 
 @media screen and (max-width:992px){
@@ -304,7 +356,7 @@ footer img{
     }
 
     nav{
-        padding: 50px 30px;
+        padding: 15px 30px;
     }
     nav button{
   display: none;
@@ -340,6 +392,32 @@ main img{
 
 
 @media screen and (max-width: 576px){
+    
+.togglers{
+    display: block;
+    font-size: 22px;
+}
+
+.ri-close-fill{
+    display: none;
+}
+
+nav ul{
+    position: fixed;
+    top: -40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
+    padding: 2rem 0;
+    background-color: antiquewhite;
+    border: 1px solid gray;
+    flex-direction: column;
+    transition: .5s;
+}
+
 main{
     align-items: center;
     flex-direction: column-reverse;
@@ -371,5 +449,84 @@ main div p{
     width: 90%;
     text-align: center;
 }
+
+#about .about-contents{
+    margin-top: 4rem;
+    margin-left: 0;
+    width: 100%;
 }
-    
+
+.about-contents .vision{
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+.content-head{
+    align-items: center;
+    background-color: #FFEFEB;
+}
+
+.content-head h2{
+    font-size: 18px;
+}
+.simple h1{
+    font-size: 30px;
+    width: 80%;
+    text-align: center;
+}
+.simple{
+    flex-direction: column;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+footer{
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+  
+footer .items{
+    gap: 50px;
+}
+
+footer img{
+    width: 95%;
+}
+
+}
+
+@media screen and (max-width: 375px){
+    main img{
+        width: 100%;
+    }
+
+    main div h1{
+        font-size: 26px;
+    }
+
+    #about .about-header h1{
+        font-size: 25px;
+    }
+
+    .about-header p{
+        font-size: 14px;
+    }
+
+    .content-head h2{
+        font-size: 17px;
+        margin-left: 9px;
+    }
+
+    .about-contents .vision{
+        font-size: 14px;
+    }
+
+    .simple h1{
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .simple button{
+        margin-left: 20px;
+    }
+}

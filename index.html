@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>site5</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/owl-carousel.css">
     <link rel="stylesheet" href="/css/prestige.css">
 </head>
 <body>
         <nav>
-                <img src="/Image2/logo (1).svg">
+            <img src="/Image2/logo (1).svg">
+            <div class="togglers">
+                <i class="ri-menu-fill"></i>
+                <i class="ri-close-fill"></i>
+            </div>
             <ul>
                 <li>
-                    <a href="#">Pricing</a>
+                    <a href="#about">About Us</a>
                 </li>
                 <li>
-                    <a href="#">Product</a>
+                    <a href="#image-holder">Testimonials</a>
                 </li>
                 <li>
-                    <a href="#">About Us</a>
+                    <a href="#career">Careers</a>
                 </li>
             </ul>
-                <button>Get Started</button>
-
+            <button>Get Started</button>
         </nav>
 
         <main>
@@ -91,7 +94,7 @@
             <h1 class="WHAT">
                 What they've said
             </h1>
-            <div class="functions" >
+            <div class="functions owl-carousel">
                 <div class=" my-functions">
                     <img src="/Image2/avatar-anisha.png">
                     <h2>
@@ -135,7 +138,7 @@
             </button>
         </section>
 
-        <section class="simple">
+        <section class="simple" id="career">
             <h1>
                 Simplify how your team works today.
             </h1>                              
@@ -196,12 +199,18 @@
          </div>
 
          <div>
-            <div>
+            <div style="display: flex;">
                 <input class="input"  placeholder="Updates in your inbox..." />
                 <button>Go</button>
             </div>
-            <p>&copy;Copywrite2020.All Rights Reserved.</p>
+            <p style="text-align: center;">&copy; Copywrite2020. All Rights Reserved.</p>
          </div>
         </footer>
+
+        <i class="ri-arrow-up-s-line"></i>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/owl-carousel.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
